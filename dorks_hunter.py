@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 import random
 import time
-import tldextract
+import photos
+
 import argparse
 from googlesearch import search
 from fake_useragent import UserAgent
 
 def parseArgs():
-    message = "Simple Google dork search"
+    message = "drive.google.com"
     parser = argparse.ArgumentParser(description=message)
     parser.add_argument('--domain', '-d', required=True, help='Domain to scan')
     parser.add_argument('--results', '-r', help='Number of results per search, default 10', type=int)
